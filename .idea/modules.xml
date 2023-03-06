@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Go.iml" filepath="$PROJECT_DIR$/Go.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic_gramma_2.iml" filepath="$PROJECT_DIR$/basic_gramma_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_world_1.iml" filepath="$PROJECT_DIR$/hello_world_1.iml" />
     </modules>
   </component>
 </project>
