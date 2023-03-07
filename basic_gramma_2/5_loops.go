@@ -7,15 +7,16 @@ import (
 	"strconv"
 )
 
-/**
+/*
+*
 * 1. for/while same like if statement, condition check cannot have brackets
 * 2. initial condition; end condition; update condition all can be changed
 * 3. there is no: <while (condition) {...}>, instead use <go (condition) {...}>
 * 4.
-	- sumOneToHundred(): have all
-	- convertToBin(n int) string: ignore initial condition
-	- printFile(filename string): only exit condition, like while
-	- forever(): ignore all stuff, infinite loop
+  - sumOneToHundred(): have all
+  - convertToBin(n int) string: ignore initial condition
+  - printFile(filename string): only exit condition, like while
+  - forever(): ignore all stuff, infinite loop
 */
 func sumOneToOneHundred() int {
 	sum := 0
@@ -52,6 +53,7 @@ func forever() {
 	}
 }
 
+/*
 func main() {
 	sumOneToOneHundred()
 	fmt.Println(convertToBin(5),
@@ -60,4 +62,4 @@ func main() {
 		convertToBin(0))
 	printFile("abc.txt")
 	// forever() infinite loop
-}
+}*/
