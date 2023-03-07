@@ -39,9 +39,7 @@ func enums() {
 	fmt.Println(b, kb, mb, gb, tb, pb)
 }
 
-/*
 func main() {
 	consts()
 	enums()
 }
-*/

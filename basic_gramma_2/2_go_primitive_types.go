@@ -39,10 +39,7 @@ func triangle() {
 	fmt.Println(c)
 }
 
-/*
 func main() {
 	euler()
 	triangle()
 }
-
-*/

@@ -24,9 +24,11 @@ func swap(a, b *int) {
 	*a, *b = *b, *a
 }
 
+/*
 func main() {
 	tryPointer()
 	a, b := 1, 2
 	swap(&a, &b)
 	fmt.Println(a, b)
 }
+*/

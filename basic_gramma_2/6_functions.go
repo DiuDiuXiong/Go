@@ -68,8 +68,6 @@ func sum(number ...int) int {
 	}
 	return s
 }
-
-/*
 func main() {
 	fmt.Println(div(13, 3))
 	var q, r = div(13, 3)
@@ -98,4 +96,3 @@ func main() {
 	fmt.Println(sum(1, 2, 3, 4, 5))
 
 }
-*/

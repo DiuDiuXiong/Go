@@ -57,10 +57,8 @@ func grade(score int) string {
 	return g
 }
 
-/*
 func main() {
 	//if_else()
 	fmt.Println(grade(0), grade(59), grade(60), grade(100), grade(101))
 	//fmt.Println(grade(0), grade(59), grade(60), grade(100), grade(89))
 }
-*/
