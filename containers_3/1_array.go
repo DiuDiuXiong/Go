@@ -24,7 +24,7 @@ func printArray(arr [5]int) {
 	arr[0] = 100 // do not change over scope, since array is value type
 }
 
-func changeArray(arr *[5]int) { // here *(arr)[0] has same effect as arr[0]
+func changeArray(arr *[5]int) { // here (*arr)[0] has same effect as arr[0]
 	arr[0] = -1
 	arr[1] = -2
 }
