@@ -15,6 +15,11 @@ func printSlice(s []int) {
 3. slice initial value is nil
 4. copy(slice dst, slice src), copy until capacity
 5. to delete an element indexed at x: <slice> = append(<slice>[:x], <slice>[x+1:]...), won't change cap, will cause len-1
+- it will also change the original array, for the deleted length due to slice delete element, it will copy from original array
+- arr := []int{0,1,2,3,4,5}; s := arr[:]
+- s = s.append(s[:2], s[4:])
+- original: [0, 1, 2, 3, 4, 5]
+- new     : [0, 1, 4, 5, 4, 5] (last 4, 5 copy from original array)
 6. popping:
 - <slice> = <slice>[x:] will cause cap,len -= x
 - <slice> = <slice>[:x] will cause len -= x
@@ -61,4 +66,12 @@ func main() {
 	s2 = s2[:len(s2)-1]
 	fmt.Println(front, tail)
 	printSlice(s2)
+
+	// Test Delete
+	testArr := [...]int{0, 1, 2, 3, 4, 5, 6}
+	fmt.Println(testArr)
+	sx := testArr[:]
+
+	sx = append(sx[:3], sx[7:]...)
+	fmt.Println(testArr)
 }
