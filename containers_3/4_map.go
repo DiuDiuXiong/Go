@@ -24,13 +24,15 @@ e.g.
 	- abcabcbb -> abc
 	- abcdabcabcabcaa -> abcd
 	- bbbbb -> b
+9. rune is like super char in golang
+10. strings. has many different functions
 */
 
 func lengthOfNonRepeatingSubStr(s string) int {
-	lastOccured := make(map[byte]int)
+	lastOccured := make(map[rune]int)
 	start := 0
 	maxLength := 0
-	for i, ch := range []byte(s) { // []byte(s) so all transferred to bytes
+	for i, ch := range []rune(s) { // []rune(s) so all transferred to type that can consume many characters
 		// avoid default 0 value, check exist
 		if lastI, ok := lastOccured[ch]; ok && lastI >= start {
 			start = lastOccured[ch] + 1
@@ -81,5 +83,6 @@ func main() {
 	fmt.Println(lengthOfNonRepeatingSubStr("abcdabcabcabcaa"))
 	fmt.Println(lengthOfNonRepeatingSubStr("bbbbb"))
 	fmt.Println(lengthOfNonRepeatingSubStr(""))
+	fmt.Println(lengthOfNonRepeatingSubStr("哈哈哈哈哈嘿黑哈"))
 
 }
