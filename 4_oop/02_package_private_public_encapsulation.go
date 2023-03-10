@@ -5,6 +5,7 @@ import "fmt"
 /**
 - first character upper case: public
 - first character lower case: private
+Here visibility is referring to stuff out of package
 */
 
 /** About package
@@ -15,6 +16,6 @@ import "fmt"
 
 */
 
-func (node TreeNode) canDefineHere() {
+func (node TreeNode) CanDefineHere() { // this is the only function that can be called from trial_main function, since it is uppercase so public
 	fmt.Println("Do nothing here.")
 }
