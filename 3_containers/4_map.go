@@ -23,7 +23,7 @@ e.g.
 	- abcdabcabcabcaa -> abcd
 	- bbbbb -> b
 9. rune is like super char in golang
-10. strings. has many different functions
+10. strings. has many functions
 */
 
 func lengthOfNonRepeatingSubStr(s string) int {
