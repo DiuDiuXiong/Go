@@ -53,6 +53,7 @@ func forever() {
 	}
 }
 
+/*
 func main() {
 	sumOneToOneHundred()
 	fmt.Println(convertToBin(5),
@@ -61,4 +62,4 @@ func main() {
 		convertToBin(0))
 	printFile("abc.txt")
 	// forever() infinite loop
-}
+}*/

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
 arr := [...]int{0,1,2,3,4,5,6,7}
 s := arr[2:6]  // s is [2,3,4,5]
@@ -33,6 +31,7 @@ func update2DSlice(s [][]int) {
 	s[1][1] = 200
 }
 
+/*
 func main() {
 	arr := [...]int{0, 1, 2, 3, 4, 5, 6, 7}
 	fmt.Println("arr[2:6] = ", arr[2:6])
@@ -90,4 +89,4 @@ func main() {
 	s4[0] = -1
 	s5[0] = 999
 	fmt.Println(arrTest)
-}
+}*/

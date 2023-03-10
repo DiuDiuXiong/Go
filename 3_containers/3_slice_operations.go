@@ -24,7 +24,7 @@ func printSlice(s []int) {
 - <slice> = <slice>[x:] will cause cap,len -= x
 - <slice> = <slice>[:x] will cause len -= x
 */
-
+/*
 func main() {
 	// Create
 	var s []int // Zero value for slice is nil
@@ -74,4 +74,4 @@ func main() {
 
 	sx = append(sx[:3], sx[7:]...)
 	fmt.Println(testArr)
-}
+}*/

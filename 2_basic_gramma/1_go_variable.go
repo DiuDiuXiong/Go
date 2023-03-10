@@ -31,6 +31,7 @@ func variableShorter() {
 	fmt.Println(a, b, c, d)
 }
 
+/*
 func main() {
 	fmt.Println("Hello world!")
 	variableZeroValue()
@@ -38,4 +39,4 @@ func main() {
 	variableTypeDeduction()
 	variableShorter()
 	fmt.Println(aa, ss, bb)
-}
+}*/

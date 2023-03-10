@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
 1. map[<key_type>]<value_type> : 1D map
 2. map[<key_type1>]map[<key_type2>]<value_type>: 2D map
@@ -46,6 +44,7 @@ func lengthOfNonRepeatingSubStr(s string) int {
 	return maxLength
 }
 
+/*
 func main() {
 	// create
 	m := map[string]string{
@@ -85,4 +84,4 @@ func main() {
 	fmt.Println(lengthOfNonRepeatingSubStr(""))
 	fmt.Println(lengthOfNonRepeatingSubStr("哈哈哈哈哈嘿黑哈"))
 
-}
+}*/

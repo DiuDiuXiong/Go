@@ -29,6 +29,7 @@ func changeArray(arr *[5]int) { // here (*arr)[0] has same effect as arr[0]
 	arr[1] = -2
 }
 
+/*
 func main() {
 	var arr1 [5]int
 	arr2 := [3]int{1, 3, 5}
@@ -55,4 +56,4 @@ func main() {
 		fmt.Println(i, v)
 	}
 
-}
+}*/
