@@ -3,7 +3,6 @@ package main
 import (
 	"Go/6_interface/infra"
 	"Go/6_interface/test"
-	"fmt"
 )
 
 func getRetrieverInfra() infra.Retriever {
@@ -98,6 +97,7 @@ func session(s RetrieverComposition) {
 	}
 }
 
+/*
 func main() {
 	var r retriever = getRetriever("test")
 	fmt.Printf("%T %v\n", r, r)
@@ -129,3 +129,4 @@ func main() {
 	//session(&r) error, r cannot
 
 }
+*/
