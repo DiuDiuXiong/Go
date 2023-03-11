@@ -12,7 +12,7 @@ So in Golang there are two methods:
 		<final_struct>.<embedded_struct>.<override_function_name>(): call original function
 		<final_struct>.<override_function_name>(): call override function, actually its just shadowing
 	- note that through embedding, the child struct cannot be upper cast to father struct, it is just a simplified version of expression/grammar
-	- to achieve upper cast, Golang can achieve that through 接口
+	- to achieve upper cast, Golang can achieve that through 接口 (interface)
 */
 
 import (
