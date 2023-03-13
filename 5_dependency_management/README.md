@@ -55,7 +55,7 @@ require (
 - for old projects not using `go.mod`, use `go mod init` or `go mod download` or `go build ./...` will cause all stuff written into go.mod
 - to install all dependencies: `go get ./...` ./... means all recursive directories
  
-# More bout Go build
+# More about Go build
 1. Each Directory can only have one main.main() function, but can create subdirectory to allow more main functions
 2. go build `./...` will check if everything compile is fine
 3. go install `./...` will install all file contain executable(main()) under current directory (executable) to `${GOPATH}/bin`
