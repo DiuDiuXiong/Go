@@ -1,0 +1,11 @@
+mode: set
+Go/9_testing/01_testing_example.go:8.33,12.2 3 1
+Go/9_testing/01_testing_example.go:14.47,18.31 4 1
+Go/9_testing/01_testing_example.go:18.31,20.57 1 1
+Go/9_testing/01_testing_example.go:20.57,22.4 1 1
+Go/9_testing/01_testing_example.go:23.3,23.28 1 1
+Go/9_testing/01_testing_example.go:23.28,25.4 1 1
+Go/9_testing/01_testing_example.go:26.3,26.22 1 1
+Go/9_testing/01_testing_example.go:29.2,29.18 1 1
+Go/9_testing/01_testing_example.go:32.19,34.2 1 0
+Go/9_testing/01_testing_example.go:36.14,38.2 0 0
