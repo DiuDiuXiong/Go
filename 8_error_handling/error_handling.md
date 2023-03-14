@@ -32,3 +32,4 @@ Check [recover.go](03_recover/recover.go) for example. So the rule of thumb is:
 - Use `defer` after open file, some tasks that need clean up no matter what, since panic is reverse order, so it is fine. 
 - Since brute throw panic is bad, can use `defer func(...){}()` call function, and within function call, have something like
 `if r := recover(); r != nil {...}` And within if, that means functions terminated due to `panic` reason. So can do handling correspondingly.
+Use `r.(error)` to get the actual error type. (And can do type assertion from here).
