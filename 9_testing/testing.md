@@ -45,3 +45,6 @@ Means 287188 times with average function calling time be 4143 ns/op.
    - Another long is during `map` operation (hash, space, refactor)
    - So the updated version, change to `make([]int, 0xffff)`, which are faster (4161, 5444399875) ==> (49347,1773945209)
 7. So code modification: `-cpuprofile` get cpu data => `go tool pprof` to see actual data ==> see where code are slow ==> modify code
+
+## Http Server Testing
+See 9-4 & 9-5 for demo.
