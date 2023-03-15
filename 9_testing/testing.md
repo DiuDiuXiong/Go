@@ -50,4 +50,4 @@ Means 287188 times with average function calling time be 4143 ns/op.
 See 9-4 & 9-5 for demo.
 
 ## Go Testing log generation
-See 9-6 for more example `go doc`.
+See 9-6 for more example `go doc`
