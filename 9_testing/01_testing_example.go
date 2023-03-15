@@ -11,7 +11,7 @@ func CalcTriangle(a, b int) int {
 	return c
 }
 
-func lengthOfNonRepeatingSubStr(s string) int {
+func LengthOfNonRepeatingSubStr(s string) int {
 	lastOccured := make(map[rune]int)
 
 	//lastOccured := make([]int, 0xffff) //65535, 65k for storage
