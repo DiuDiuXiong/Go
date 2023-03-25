@@ -40,7 +40,10 @@ func sharedFreeVar() (func(), func()) {
 	return f1, f2
 }
 
-/*
+type tricky struct {
+	a, b *int
+}
+
 func main() {
 	a := adder()
 	for i := 0; i < 10; i++ {
@@ -50,5 +53,20 @@ func main() {
 	f1, f2 := sharedFreeVar()
 	f1()
 	f2()
+
+	// tricky case, closure of struct
+	t := tricky{}
+	x1, x2, x3 := 0, 0, 0
+	t.a, t.b = &x1, &x2
+	f := func() {
+		*t.a += 1
+		*t.b += 2
+		fmt.Println(*t.a, *t.b)
+	}
+
+	f() // a = 1, b = 2
+	x1 += 1
+	f() // a = 3, b = 4
+	t.a = &x3
+	f() // point to father struct, rather than point to each variable separately
 }
-*/
