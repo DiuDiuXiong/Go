@@ -10,7 +10,7 @@ TDT in order to solve issues above:
 - Define test data as `[]struct{<param_name> <param_type>} {{..},...,{..}}`
 - Use a for loop to iterate over struct above, and test each one. If some of those failed, continue.
 - Whenever a file named as: `<...>_test.go` it will be a test file.
-- Check [01_triangle_test.go](01_repeating_test.go)/[01_triangle_test.go](01_repeating_test.go) for example
+- Check [01_triangle_test.go](01_triangle_test.go)/[01_repeating_test.go](01_repeating_test.go) for example
 
 ## Test Cover range
 Run the two commands below in a row to see which function is tested and which is not.
