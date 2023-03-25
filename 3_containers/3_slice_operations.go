@@ -19,7 +19,7 @@ func printSlice(s []int) {
 - arr := []int{0,1,2,3,4,5}; s := arr[:]
 - s = s.append(s[:2], s[4:])
 - original: [0, 1, 2, 3, 4, 5]
-- new     : [0, 1, 4, 5, 4, 5] (last 4, 5 copy from original array)
+- new     : [0, 1, 4, 5, 4, 5] (last 4, 5 copy from original array) (the two originally pointed([3,4]), replaced by [4,5])
 6. popping:
 - <slice> = <slice>[x:] will cause cap,len -= x
 - <slice> = <slice>[:x] will cause len -= x
