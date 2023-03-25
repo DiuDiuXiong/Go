@@ -53,10 +53,10 @@ func printF(prtI *int) {
 
 func writeFile(filename string) { // here will first flush content then close file
 	file, err := os.Create(filename)
+	defer file.Close()
 	if err != nil {
 		panic(err)
 	}
-	defer file.Close()
 
 	writer := bufio.NewWriter(file) // write to buffer to allow writing to file at once to save time
 	defer writer.Flush()            // write to file
