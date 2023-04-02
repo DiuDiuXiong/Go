@@ -63,8 +63,8 @@ This will output `Worker x received x` for x range from 0 to 9 orderless.
 
 Channel can also be used as output. There are three possibility:
 - `chan <type>`: Return a general type channel
-- `chan<- <type> `: Send only channel, this type of channel can only be pushed data into it but cannot pull data from it once returned.
-- `<-chan <type>`: Receive only channel, this type of channel can only be pulled data from but cannot push data into it.
+- `chan<- <type> `: Receive only channel, this type of channel can only be pushed data into it but cannot pull data from it once returned.
+- `<-chan <type>`: Send only channel, this type of channel can only be pulled data from but cannot push data into it.
 For example:
 ```go
 func receiveOnly() chan<- int {
