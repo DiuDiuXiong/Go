@@ -96,6 +96,8 @@ func chanDemoWaitGroup() {
 	wg.Wait()
 }
 
+/*
 func main() {
 	chanDemoWaitGroup()
 }
+*/
