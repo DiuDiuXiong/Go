@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type treeNode struct {
 	Val   int
 	Left  *treeNode
@@ -29,6 +27,7 @@ func (node *treeNode) TraverseWithChannel() chan *treeNode {
 	return out
 }
 
+/*
 func main() {
 	r := treeNode{Val: 1,
 		Left:  &treeNode{Val: 6, Left: &treeNode{Val: 5}, Right: &treeNode{Val: 4}},
@@ -39,6 +38,7 @@ func main() {
 		fmt.Println(n.Val)
 	}
 }
+*/
 
 /*
 1. Here pass all node into the channel
