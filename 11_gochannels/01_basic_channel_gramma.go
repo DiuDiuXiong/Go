@@ -163,6 +163,7 @@ func closeChannelAndDetection() {
 	time.Sleep(time.Millisecond)
 }
 
+/*
 func main() {
 	// goChannelDemo()
 	// chanDemoError()
@@ -175,3 +176,4 @@ func main() {
 	closeChannelAndDetection()
 
 }
+*/
