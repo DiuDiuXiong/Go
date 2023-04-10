@@ -52,8 +52,10 @@ func useTimerToReturn() {
 	}
 }
 
+/*
 func main() {
 	//nonBlocking()
 	useTimerToReturn()
 
 }
+*/
