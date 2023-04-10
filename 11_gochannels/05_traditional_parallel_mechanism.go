@@ -60,7 +60,9 @@ func useMutex() {
 	fmt.Println(a.get())
 }
 
+/*
 func main() {
 	// useWaitGroup()
 	useMutex()
 }
+*/

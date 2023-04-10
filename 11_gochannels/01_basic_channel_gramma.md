@@ -23,7 +23,10 @@ func goChannelDemo() {
 ```
 This function have few key points:
 - goroutine defined start from line 3 subscribe to channel `c` before main goroutine start to push to it, since push to a channel
-without subscriber is a deadlock error in golang.
+without subscriber is a deadlock error in golang. 
+- More specific, if there are only one goroutine left, and it tries to send/receive to a channel that is error
+- If there are more than one active goroutine, we can freely do operation to channels, but they won't progress until send/receive successfully.
+- If there is buffer they can progress, or `select`.
 - we let time sleep for a while so it has time to pull data from channel and IO print.
 ```go
 func chanDemoError() {
