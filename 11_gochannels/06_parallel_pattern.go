@@ -140,9 +140,11 @@ func useFanIns不坑() {
 	}
 }
 
+/*
 func main() {
 	//msgGenUse()
 	//useFanIn()
 	//useFanIns坑() (only one branch of 0-inf)
 	useFanIns不坑() // multiple branch of 0-inf
 }
+*/
