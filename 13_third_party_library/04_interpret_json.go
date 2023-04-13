@@ -70,7 +70,9 @@ func resolveByStruct() {
 
 // here we see we don't need to correspond to everything, only things we want
 
+/*
 func main() {
 	// useMapToAcceptJson()
 	resolveByStruct()
 }
+*/
