@@ -7,6 +7,15 @@ import (
 
 // We can use a map if we are not sure what we expect
 
+// if we use a map[string]interface{} as receiver for json.Unmarshal.
+/*
+1. Whatever name of json will be interpreted as string for map key
+2. If the value is another json, it will be nested map, otherwise will try to resolve
+3. However, looking above it is very hard to actually get values. So we define struct instead.
+4. We can use a struct to receive, as long as data type for value & json tag for key can match
+5. We don't have to match all of them, partial match is also fine
+*/
+
 const randomJsonString = `{
     "glossary": {
         "title": "example glossary",
@@ -41,14 +50,6 @@ func useMapToAcceptJson() {
 	fmt.Printf("%s\n", m["glossary"].(map[string]interface{})["GlossDiv"].(map[string]interface{})["title"])
 }
 
-// if we use a map[string]interface{} as receiver for json.Unmarshal.
-/*
-- Whatever name of json will be interpreted as string for map key
-- If the value is another json, it will be nested map.
-- Otherwise will try to resolve
-- However, looking above it is very hard to actually get values. So we define struct instead.
-*/
-
 const otherJSONString = `{
 	"data": [
 		{ "name":"n1", "id": "1"},
@@ -67,8 +68,6 @@ func resolveByStruct() {
 	json.Unmarshal([]byte(otherJSONString), &m)
 	fmt.Println(m.Data[0].Name, m.Data[1].Name)
 }
-
-// here we see we don't need to correspond to everything, only things we want
 
 /*
 func main() {
