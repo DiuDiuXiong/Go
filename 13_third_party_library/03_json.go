@@ -112,10 +112,11 @@ to define the name you wish that field have when converted to json.
 	- Create a object of same type, which will be used for store unmarshal data form json
 	- err := json.Unmarshal([]byte(<json_string>, &<storageObjectCreated>))
 */
-
+/*
 func main() {
 	// jsonPrint()
 	//  jsonSelfDefinedName()
 	// checkCompose()
 	unmarshal()
 }
+*/
