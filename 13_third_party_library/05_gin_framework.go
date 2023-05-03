@@ -16,7 +16,7 @@ lightweight and efficient, and it is often used in production environments becau
 go get -u github.com/gin-gonic/gin
 */
 
-func main() {
+func mainn() {
 	r := gin.Default() // return a gin engin
 
 	// r.Use() to add middle-ware

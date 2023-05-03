@@ -90,7 +90,7 @@ func checkCompose() {
 }
 
 func unmarshal() {
-	s := `{"item":{"id":"1234","name":"learn go","quantity":3,"totalPrice":30},"id":"learn go"}`
+	s := `{"item":{"id":"1234","name":"learn go","quantity":3,"totalPrice":30},"id":"learn go","notExist":"notExistVal"}`
 	var o ComposeType
 	err := json.Unmarshal([]byte(s), &o)
 	if err != nil {
@@ -115,7 +115,7 @@ to define the name you wish that field have when converted to json.
 /*
 func main() {
 	// jsonPrint()
-	//  jsonSelfDefinedName()
+	// jsonSelfDefinedName()
 	// checkCompose()
 	unmarshal()
 }
