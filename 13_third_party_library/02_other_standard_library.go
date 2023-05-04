@@ -9,7 +9,7 @@ package main
 6. string/rand/math
 7. go packages: https://pkg.go.dev/
 */
-/*å
+/*
 func main() {
 
 }
